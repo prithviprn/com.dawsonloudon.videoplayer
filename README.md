@@ -1,2 +1,2 @@
-com.dawsonloudon.videoplayer
-============================
+ou-plugin-test
+==============

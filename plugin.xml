@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.dawsonloudon.videoplayer" version="1.0.0">
+    <engines>
+        <engine name="cordova" version=">=3.6.0" />
+    </engines>
+    <name>VideoPlayer</name>
+    <description>VideoPlayer Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,videoplayer</keywords>
+    <js-module src="www/VideoPlayer.js" name="VideoPlayer">
+        <clobbers target="VideoPlayer" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="VideoPlayer">
+                <param name="ios-package" value="CDVMoviePlayer"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVMoviePlayer.h" />
+        <source-file src="src/ios/CDVMoviePlayer.m" />
+    </platform>
+</plugin>
