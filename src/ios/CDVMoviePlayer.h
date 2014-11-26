@@ -19,5 +19,6 @@
 @property (nonatomic, assign) id<CDVMoviePlayerDelegate>delegate;
 
 -(void)playMovie:(CDVInvokedUrlCommand *)command;
+-(void)test:(CDVInvokedUrlCommand *)command;
 
 @end

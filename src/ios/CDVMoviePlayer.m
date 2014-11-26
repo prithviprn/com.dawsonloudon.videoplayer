@@ -22,6 +22,14 @@ static inline double radians (double degrees) {return degrees * M_PI/180;}
     NSMutableArray *closedCaptionsArray;
 }
 
+-(void)test:(CDVInvokedUrlCommand *)command {
+    callbackID = command.callbackId;
+    
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"MoviePlayer"];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 -(void)playMovie:(CDVInvokedUrlCommand *)command {
     callbackID = command.callbackId;
 
