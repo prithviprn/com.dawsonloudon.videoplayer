@@ -21,10 +21,11 @@
         <source-file src="src/ios/CDVMoviePlayer.m" />
     </platform>
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="VideoPlayer">
                 <param name="android-package" value="com.dawsonloudon.videoplayer"/>
             </feature>
         </config-file>
+        <source-file src="src/android/VideoPlayer.java" target-dir="src/com/dawsonloudon/videoplayer" />
     </platform>
 </plugin>
