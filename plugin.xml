@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="com.dawsonloudon.videoplayer" version="1.0.0">
     <engines>
-        <engine name="cordova" version=">=3.5.0" />
+        <engine name="cordova" version=">=3.0.0" />
     </engines>
     <name>VideoPlayer</name>
     <description>VideoPlayer Plugin</description>
